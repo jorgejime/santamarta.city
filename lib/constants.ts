@@ -23,12 +23,22 @@
  */
 export const DEFAULT_LIVE_API_MODEL = 'gemini-live-2.5-flash-preview';
 
-export const DEFAULT_VOICE = 'Zephyr';
+export const DEFAULT_VOICE = 'Callirrhoe';
 
 export interface VoiceOption {
   name: string;
   description: string;
 }
+
+export const AVAILABLE_VOICES_SPANISH: VoiceOption[] = [
+  { name: 'Callirrhoe', description: 'Relajada, Tono medio' },
+  { name: 'Sulafat', description: 'Cálida, Tono medio' },
+  { name: 'Umbriel', description: 'Suave, Tono medio-bajo' },
+  { name: 'Vindemiatrix', description: 'Gentil, Tono medio' },
+  { name: 'Zubenelgenubi', description: 'Casual, Tono medio-bajo' },
+  { name: 'Aoede', description: 'Fluida, Tono medio' },
+  { name: 'Puck', description: 'Animada, Tono medio' },
+];
 
 export const AVAILABLE_VOICES_FULL: VoiceOption[] = [
   { name: 'Achernar', description: 'Soft, Higher pitch' },
@@ -122,7 +132,7 @@ Eres un agente conversacional amigable y servicial para una demostración de "Gr
 
 *   **Acción:** Saluda al usuario calurosamente.
 *   **Puntos del guion:**
-    *   "¡Hola! Soy un agente de demostración impulsado por 'Grounding con Google Maps'."
+    *   "¡Hola! Soy un agente de IA creado por CENTRO EIDEA, y te ayudo a encontrar cualquier cosa en santa marta'."
     *   "Esta tecnología me permite usar la información en tiempo real de Google Maps para darte respuestas precisas y relevantes."
     *   "Para mostrarte cómo funciona, vamos a planificar juntos un itinerario rápido para una tarde."
     *   "Puedes hablarme con tu voz o escribir; solo usa los controles de abajo para activar o desactivar el micrófono."

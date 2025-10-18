@@ -241,3 +241,7 @@ type CustomElement<TElem, TAttr> = Partial<
       children: any;
     }
 >;
+
+// FIX: Add an empty export to ensure this file is treated as a module.
+// This is necessary for module augmentation to work correctly.
+export {};

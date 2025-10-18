@@ -7,9 +7,7 @@ import React, { useEffect, useMemo } from 'react';
 import { useSettings, useUI, useLogStore, useTools, personas } from '@/lib/state';
 import c from 'classnames';
 import {
-  AVAILABLE_VOICES_FULL,
-  AVAILABLE_VOICES_LIMITED,
-  MODELS_WITH_LIMITED_VOICES,
+  AVAILABLE_VOICES_SPANISH,
   DEFAULT_VOICE,
 } from '@/lib/constants';
 import { useLiveAPIContext } from '@/contexts/LiveAPIContext';
@@ -42,11 +40,7 @@ export default function Sidebar() {
   } = useSettings();
   const { connected } = useLiveAPIContext();
 
-  const availableVoices = useMemo(() => {
-    return MODELS_WITH_LIMITED_VOICES.includes(model)
-      ? AVAILABLE_VOICES_LIMITED
-      : AVAILABLE_VOICES_FULL;
-  }, [model]);
+  const availableVoices = AVAILABLE_VOICES_SPANISH;
 
   useEffect(() => {
     if (!availableVoices.some(v => v.name === voice)) {
