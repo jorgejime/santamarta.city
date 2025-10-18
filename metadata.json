@@ -1,0 +1,7 @@
+{
+  "name": "Chatea con Mapas en Vivo",
+  "description": "Esta demostración interactiva destaca la capacidad de Gemini y Grounding con Google Maps para mantener conversaciones en tiempo real mediante la voz. Planifica una excursión de un día usando lenguaje natural y experimenta cómo Gemini utiliza Google Maps para ofrecer información precisa y actualizada.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
